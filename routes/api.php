@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('endpoint', \:namespace_vendor\:namespace_tab_name\Http\Controllers\TabController::class . '@index');
+Route::get('endpoint', \rckildea\BetterDebug\Http\Controllers\TabController::class . '@index');

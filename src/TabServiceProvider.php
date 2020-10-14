@@ -1,11 +1,11 @@
 <?php
 
-namespace :namespace_vendor\:namespace_tab_name;
+namespace rckildea\BetterDebug;
 
 use Facade\Ignition\Ignition;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use :namespace_vendor\:namespace_tab_name\Http\Middleware\Authorize;
+use rckildea\BetterDebug\Http\Middleware\Authorize;
 
 class TabServiceProvider extends ServiceProvider
 {
@@ -33,7 +33,7 @@ class TabServiceProvider extends ServiceProvider
             return;
         }
 
-        Route::prefix('ignition-vendor/:vendor/:package_name')
+        Route::prefix('ignition-vendor/rckildea/ignition-better-debug')
                 ->group(__DIR__.'/../routes/api.php');
     }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace :namespace_vendor\:namespace_tab_name\Tests;
+namespace rckildea\BetterDebug\Tests;
 
 use Illuminate\Support\Facades\Route;
 use Orchestra\Testbench\TestCase as Orchestra;
-use :namespace_vendor\:namespace_tab_name\TabServiceProvider;
+use rckildea\BetterDebug\TabServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace :namespace_vendor\:namespace_tab_name\Http\Controllers;
+namespace rckildea\BetterDebug\Http\Controllers;
 
 use Illuminate\Http\Request;
 

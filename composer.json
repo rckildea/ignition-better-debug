@@ -1,23 +1,24 @@
 {
-    "name": ":vendor/:package_name",
-    "description": ":package_description",
+    "name": "rckildea/ignition-better-debug",
+    "description": "Better control over debug messages in Ignition.",
     "keywords": [
         "laravel",
         "flare",
         "ignition"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/rckildea/ignition-better-debug",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Ryan Kildea",
+            "email": "rckildea@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": ">=7.1.0",
-        "facade/ignition": "^1.0"
+        "facade/ignition": "^1.0",
+        "rckildea/ignition-better-debug": "*"
     },
     "require-dev": {
         "orchestra/testbench": "^3.8",
@@ -25,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            ":namespace_vendor\\:namespace_tab_name\\": "src/"
+            "rckildea\\BetterDebug\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":namespace_vendor\\:namespace_tab_name\\Tests\\": "tests"
+            "rckildea\\BetterDebug\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                ":namespace_vendor\\:namespace_tab_name\\TabServiceProvider"
+                "rckildea\\BetterDebug\\TabServiceProvider"
             ]
         }
     },
